@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe5</title>
+</head>
+<body>
+    <script>
+        let distancia = parseFloat(prompt('Qual será a distância?'));
+        let valorCorrida;
+
+        if(distancia <= 200)
+        {
+            valorCorrida = 0.50 * distancia;
+        }
+            else
+            {
+                valorCorrida = 0.45 * distancia;
+            }
+        document.write('O valor da corrida será de: R$ ' + valorCorrida);
+    </script>
+</body>
+</html>

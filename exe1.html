@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe1</title>
+</head>
+<body>
+    <script>
+        let idades = [];
+        let idade = 0;
+        let media = 0;
+        let soma = 0;
+
+        while(idade!==999)
+        {
+        idade = parseInt(prompt('Informe a idade: \n digite 999 para sair!'));
+        idades.push(idade)
+        }
+
+        const pope = idades.pop()
+        
+
+        for(let i in idades)
+        {
+        soma +=idades[i]
+        }
+        media = soma / idades.length
+
+        document.write('O total de alunos é: '+(idades.length) +'<br/>')
+        document.write('A média de IDADES é: ' + media)
+    </script>
+</body>
+</html>

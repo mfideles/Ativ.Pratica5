@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe2</title>
+</head>
+<body>
+    <script>
+        let salarioH = 0;
+        let salarioM = 0;
+        let resposta = 's'
+
+        while(resposta == 's')
+        {
+            let sexo = prompt('Infome o seu sexo [H/M]:');
+            sexo.toLocaleLowerCase();
+            if(sexo == 'h')
+            {
+                let salario = parseFloat(prompt('Informe o salário: R$'));
+                salarioH = salario + salarioH;
+            } 
+                else
+                {
+                let salario = parseFloat(prompt('Informe o salário: R$'));
+                salarioM = salario + salarioM;
+                }
+            resposta = prompt('Deseja incluir mais alguma informação? Digite s p/ S e n para finalizar o processo: [s/n]').toLocaleLowerCase();
+        }
+        document.write('Salário HOMEM: R$ ' +salarioH+ '<br/>');
+        document.write('Salário MULHER: R$ ' +salarioM);
+    </script>
+</body>
+</html>

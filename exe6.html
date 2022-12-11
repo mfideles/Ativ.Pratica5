@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exe6</title>
+</head>
+<body>
+    <script>
+        let comprimento =  parseFloat(prompt('Informe o comprimento do terreno: '));
+        let largura = parseFloat(prompt('Informe a largura do terreno: '));
+        let metroQuadrado = comprimento * largura;
+
+        if(metroQuadrado < 100)
+        {
+            document.write('TERRENO POPULAR');
+        }
+        else if (metroQuadrado >= 100 && metroQuadrado <= 500)
+        {
+            document.write('TERRENO MASTER');
+        }
+        else
+        {
+            document.write('TERRENO VIP');
+        }
+    </script>
+</body>
+</html>
